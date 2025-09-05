@@ -61,6 +61,15 @@ function analyzeArray(array) {
 
     arrayLength = array.length;
 
+    if(arrayLength === 0){
+      return {
+        average: 0,
+        min: 0,
+        max: 0,
+        length: 0
+      };
+    }
+
     let sum = 0;
 
     for (let i = 0; i < arrayLength; i++) {
