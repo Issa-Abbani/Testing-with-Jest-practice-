@@ -8,3 +8,7 @@ test('Basic Functionality Check for Cipher', ()=>{
 test('Wrong type parameter', ()=>{
   expect(caesarCipher(10 , 3)).toBeUndefined();
 })
+
+test('Dealing with spaces, special characters...', ()=>{
+  expect(caesarCipher("x*y z", 3)).toBe("a*b c");
+})
