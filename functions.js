@@ -11,7 +11,7 @@ function reverseString(string){
 
 function calculator(a, operator, b){
   if(a === undefined || b === undefined || operator === undefined) return "missing parameters";
-  if (typeof a !== "number" || typeof b !== "number") return "Invalid Numbers";
+  if (typeof a !== "number" || typeof b !== "number" || typeof operator !== "string") return "Invalid Parameters";
   let total;
   switch(operator){
     case "+": total = a + b;
